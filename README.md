@@ -1,1 +1,1 @@
-ELMAH Code Snippets=================ELMAH code snippets for Visual Studio. Generate a lot of ELMAH related code lines with just a single key strokes.Installation------------Clone this repository and import all snippets into Code Snippet Manager in Visual Studio.
+ELMAH Code Snippets=================ELMAH code snippets for Visual Studio. Generate a lot of ELMAH related code lines with just a few key strokes.Installation------------Clone this repository and import all snippets into Code Snippet Manager in Visual Studio.
