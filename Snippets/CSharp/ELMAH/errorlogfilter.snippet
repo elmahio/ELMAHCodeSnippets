@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>errorlogfilter</Title>
+			<Shortcut>errorlogfilter</Shortcut>
+			<Description>Code snippet for filtering exceptions</Description>
+			<Author>elmah.io</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+        <![CDATA[public void ErrorLog_Filtering(object sender, ExceptionFilterEventArgs e)
+{
+    if (e.Exception.GetBaseException() is HttpRequestValidationException)
+        e.Dismiss();
+}$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

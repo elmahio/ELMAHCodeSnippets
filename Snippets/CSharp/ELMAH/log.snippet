@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>log</Title>
+			<Shortcut>log</Shortcut>
+			<Description>Code snippet for ELMAH's Log statement</Description>
+			<Author>elmah.io</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>exception</ID>
+					<ToolTip>Property type</ToolTip>
+					<Default>new Exception()</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+        <![CDATA[ErrorLog.GetDefault(HttpContext.Current).Log(new Error($exception$));$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
